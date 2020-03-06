@@ -4,6 +4,7 @@
     "main": "index.js",
     "repository": "git@github.com:Macke97/kontonummer.js.git",
     "author": "Marcus Thelin <marcus.thelin@24hr.se>",
+    "private": false,
     "license": "MIT",
     "scripts": {
         "build": "babel src --out-dir dist"
