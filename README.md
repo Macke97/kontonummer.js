@@ -1,4 +1,5 @@
-# kontonummer.js
+# @24hr/kontonummer
+### Detta är en fork av [kontonummer.js](https://github.com/jop-io/kontonummer.js).
 Kontonummer.js är ett bibliotek för att kontrollera och validera kontonummer för svenska banker. Biblioteket kan användas för att ta reda på vilken bank ett kontonummer tillhör, samt om kontonumret valideras som giltigt. Målsättningen är att stödja samtliga banker vilka är verksamma i Sverige. För närvarande stöds följande banker:
 * Svea Bank
 * Avanza Bank
@@ -36,12 +37,13 @@ Kontonummer.js är ett bibliotek för att kontrollera och validera kontonummer f
 
 # Installation
 ```javascript
-<script src="kontonummer.min.js"></script>
+npm i @24hr/kontonummer
 ```
 
 # Användning
 ```javascript
-var result = kontonummer('9420, 417 23 85');
+const kontonummer = require('@24hr/kontonummer')
+const result = kontonummer('9420, 417 23 85');
 console.log(result);
 
 /* Skriver ut följande objekt till konsolen:
@@ -53,6 +55,7 @@ console.log(result);
 }
 */
 ```
+## Inkorrekt bankkonto
 ```javascript
 var result = kontonummer('123456789');
 console.log(result); // false
@@ -78,4 +81,6 @@ console.log(result); // false
   * Adderade Riksgälden
 
 # Licens
-Kontonummer.js omfattas av licensformen [MIT](https://opensource.org/licenses/MIT "The MIT License"). Varsågod!
+**Av [Jonas Persson(jop-io)](https://github.com/jop-io)**
+
+"Kontonummer.js omfattas av licensformen [MIT](https://opensource.org/licenses/MIT "The MIT License"). Varsågod!"
